@@ -1,0 +1,8 @@
+<a{{ attributes }} href="{{ path('app_character', { id: character.id }) }}">
+    <div class="avatar" style="background: {{ '#'~character.houses[0].colour }};">
+        <img src="{{ asset('images/'~character.image) }}" alt="{{ character.firstName }}">
+    </div>
+    <div class="name">
+        {{ character.firstName ~ ' ' ~ character.lastName }}
+    </div>
+</a>

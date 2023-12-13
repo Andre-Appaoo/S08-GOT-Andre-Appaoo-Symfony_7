@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game of Thrones | Accueil{% endblock %}
+
+{% block body %}
+    {{ component('CharacterList', { characters: allCharacters }) }}
+{% endblock %}

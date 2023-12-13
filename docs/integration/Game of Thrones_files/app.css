@@ -71,7 +71,7 @@ nav ul {
     border-radius: 10px;
     background: skyblue;
     text-align: center;
-
+    
 }
 .avatar img {
     vertical-align: bottom;
@@ -92,7 +92,7 @@ nav ul {
 
 }
 
-.house-logo
+.house-logo 
 {
     border-radius: 10px;
 }
@@ -146,13 +146,13 @@ nav ul {
     .character-page h3 {
         font-size: 1.5rem;
         text-align: left;
-
+    
     }
     .houses-list {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     .houses-list .house-logo {
         width: calc(100% / 3 - 2rem);
         margin: 0 1rem 1rem
@@ -174,5 +174,5 @@ nav ul {
     }
     .wrapper {
         max-width: 1100px;
-    }
+    } 
 }

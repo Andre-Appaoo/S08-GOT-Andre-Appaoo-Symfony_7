@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game of Thrones | Maisons{% endblock %}
+
+{% block body %}
+    <ul class="houses-list">
+        {% for house in allHouses %}
+        <li class="house-logo" style="background: {{ '#'~house.colour }};">
+            <a href="{{ path('app_house', { id: house.id }) }}">
+                <img src="{{ asset('images/'~house.image) }}" alt="{{ house.name }}">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

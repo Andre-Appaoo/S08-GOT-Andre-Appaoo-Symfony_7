@@ -1,0 +1,9 @@
+<div{{ attributes }}>
+    <ul class="characters-list">
+        {% for character in characters %}
+            <li class="character-card">
+                {{ component('CharacterCard', { character: character }) }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

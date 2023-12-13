@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Game of Thrones | {{ house.name }}{% endblock %}
+
+{% block body %}
+    <h2>Maison {{ house.name }}</h2>
+    {{ component('CharacterList', { characters: house.members }) }}
+{% endblock %}
